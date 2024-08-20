@@ -1,0 +1,98 @@
+{
+  "Tarjetas": [
+    {
+      "id": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado":"Pagado",
+      "FechaCierre":"01/08/2024",
+      "FechaVencimiento":"01/08/2024",
+      "FechaRegistro":"01/08/2024",
+      "TotalTajeta":""
+    },
+    {
+      "id": 2,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado":"Pagado",
+      "FechaCierre":"01/08/2024",
+      "FechaVencimiento":"01/08/2024",
+      "FechaRegistro":"01/08/2024",
+      "TotalTajeta":""
+    },
+    {
+      "id": 3,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado":"Pagado",
+      "FechaCierre":"01/08/2024",
+      "FechaVencimiento":"01/08/2024",
+      "FechaRegistro":"01/08/2024",
+      "TotalTajeta":""
+    }
+  ],
+  "Impuestos": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado":"Pagado",
+      "FechaRegistro":"01/08/2024"
+    }
+  ],
+  "Vehiculos": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado":"Pagado",
+      "FechaRegistro":"01/08/2024"
+    }
+  ],
+  "DeudaPagar": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado":"Pagado",
+      "FechaRegistro":"01/08/2024"
+    }
+  ],
+  "DeudaCobrar": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado":"Pagado",
+      "FechaRegistro":"01/08/2024"
+    }
+  ],
+  "Educacion": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado":"Pagado",
+      "FechaRegistro":"01/08/2024"
+    }
+  ],
+  "Conectividad": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado":"Pagado",
+      "FechaRegistro":"01/08/2024"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
