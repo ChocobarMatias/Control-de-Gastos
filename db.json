@@ -18,17 +18,23 @@
       "FechaVencimiento": "",
       "FechaRegistro": "",
       "TotalTajeta": "",
-      "id": 9
-    },
+      "id": 2
+    }
+  ],
+  "TarjetaVista": [
     {
-      "NombreTarjeta": "",
-      "MontoPagar": 0,
-      "Estado": "Pagado",
-      "FechaCierre": "",
-      "FechaVencimiento": "",
-      "FechaRegistro": "",
+      "id": 1,
+      "NombreTarjeta": "Visa Macro",
+      "Compra": "",
+      "MontoCompra":"",
+      "CantidadCuota":"",
+      "CalorCuota":"",
+      "CuotaActual":"",
+      "CuotasPendientes":"",
+      "MontoPendiente":"",
+      "FechaCompra": "",
       "TotalTajeta": "",
-      "id": 11
+      "FechaRegistro": "01/08/2024"
     }
   ],
   "Impuestos": [
