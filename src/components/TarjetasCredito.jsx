@@ -10,10 +10,11 @@ import CreateTarjeta from "./CRUD/Tarjetas/CreateTarjeta";
 import DeleteIcon from './DeleteIcon';
 import EditIcon from "./EditIcon";
 import IconoView from "./IconoView";
-import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 import UpdateTarjeta from "./CRUD/Tarjetas/UpdateTarjeta";
 import { BsXCircle } from "react-icons/bs";
 import { FcOk } from "react-icons/fc";
+// import VER_TARJETA from "../Routes/router";
 
 const TarjetasCredito = () => {
 
@@ -28,7 +29,6 @@ const TarjetasCredito = () => {
 
   const getTarjeta = async () => {
 
-    const navigate = useNavigate();
     
     try {
       let response = await axios.get("http://localhost:3000/Tarjetas");
@@ -40,11 +40,6 @@ const TarjetasCredito = () => {
     }
   };
 
-  const view = (id)=>{
-
-    navigate("http://localhost:3000/Tarjetas/"+id)
-    alert("hola")
-  }
 
   const handleClick = async(id) =>{
     console.log("eliminar")
@@ -135,7 +130,7 @@ const handleSave2 =()=>{
                   <td>
                   <Button className=" bg-white" onClick={() => handleClick(tarjeta.id)}  ><DeleteIcon/> </Button>
                   <Button onClick={() => setShowAlert2(true)} className=" bg-white"><EditIcon/></Button>
-                  <Button className=" bg-white" onClick={view}><IconoView /></Button>
+                  <Link className=" bg-white" to={`/tarjetas/view/${tarjeta.id}`}><IconoView /></Link>
                   </td>
                 </tr>
               </MDBTableBody>
