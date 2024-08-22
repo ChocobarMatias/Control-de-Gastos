@@ -33,3 +33,22 @@
 .modal{
   height: 200px;
 }
+
+.iconOk{
+  width: 10%;
+  height: 10%;
+}
+
+/* Icono de delete */
+
+.delete-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.delete-icon:hover .icon {
+  transform: scale(1.2);
+  color: red;
+}
+

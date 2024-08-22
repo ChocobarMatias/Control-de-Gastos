@@ -1,34 +1,34 @@
 {
   "Tarjetas": [
     {
-      "id": 1,
-      "NombreTarjeta": "Visa Macro",
-      "MontoPagar": "$10000",
-      "Estado":"Pagado",
-      "FechaCierre":"01/08/2024",
-      "FechaVencimiento":"01/08/2024",
-      "FechaRegistro":"01/08/2024",
-      "TotalTajeta":""
+      "NombreTarjeta": "",
+      "MontoPagar": 0,
+      "Estado": "Pagado",
+      "FechaCierre": "",
+      "FechaVencimiento": "",
+      "FechaRegistro": "",
+      "TotalTajeta": "",
+      "id": 8
     },
     {
-      "id": 2,
-      "NombreTarjeta": "Visa Macro",
-      "MontoPagar": "$10000",
-      "Estado":"Pagado",
-      "FechaCierre":"01/08/2024",
-      "FechaVencimiento":"01/08/2024",
-      "FechaRegistro":"01/08/2024",
-      "TotalTajeta":""
+      "NombreTarjeta": "",
+      "MontoPagar": 0,
+      "Estado": "Pendiente",
+      "FechaCierre": "",
+      "FechaVencimiento": "",
+      "FechaRegistro": "",
+      "TotalTajeta": "",
+      "id": 9
     },
     {
-      "id": 3,
-      "NombreTarjeta": "Visa Macro",
-      "MontoPagar": "$10000",
-      "Estado":"Pagado",
-      "FechaCierre":"01/08/2024",
-      "FechaVencimiento":"01/08/2024",
-      "FechaRegistro":"01/08/2024",
-      "TotalTajeta":""
+      "NombreTarjeta": "",
+      "MontoPagar": 0,
+      "Estado": "Pagado",
+      "FechaCierre": "",
+      "FechaVencimiento": "",
+      "FechaRegistro": "",
+      "TotalTajeta": "",
+      "id": 11
     }
   ],
   "Impuestos": [
@@ -36,8 +36,8 @@
       "id_tarjeta": 1,
       "NombreTarjeta": "Visa Macro",
       "MontoPagar": "$10000",
-      "Estado":"Pagado",
-      "FechaRegistro":"01/08/2024"
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
     }
   ],
   "Vehiculos": [
@@ -45,8 +45,8 @@
       "id_tarjeta": 1,
       "NombreTarjeta": "Visa Macro",
       "MontoPagar": "$10000",
-      "Estado":"Pagado",
-      "FechaRegistro":"01/08/2024"
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
     }
   ],
   "DeudaPagar": [
@@ -54,8 +54,8 @@
       "id_tarjeta": 1,
       "NombreTarjeta": "Visa Macro",
       "MontoPagar": "$10000",
-      "Estado":"Pagado",
-      "FechaRegistro":"01/08/2024"
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
     }
   ],
   "DeudaCobrar": [
@@ -63,8 +63,8 @@
       "id_tarjeta": 1,
       "NombreTarjeta": "Visa Macro",
       "MontoPagar": "$10000",
-      "Estado":"Pagado",
-      "FechaRegistro":"01/08/2024"
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
     }
   ],
   "Educacion": [
@@ -72,8 +72,8 @@
       "id_tarjeta": 1,
       "NombreTarjeta": "Visa Macro",
       "MontoPagar": "$10000",
-      "Estado":"Pagado",
-      "FechaRegistro":"01/08/2024"
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
     }
   ],
   "Conectividad": [
@@ -81,8 +81,8 @@
       "id_tarjeta": 1,
       "NombreTarjeta": "Visa Macro",
       "MontoPagar": "$10000",
-      "Estado":"Pagado",
-      "FechaRegistro":"01/08/2024"
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
     }
   ],
   "comments": [

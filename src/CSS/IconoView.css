@@ -1,0 +1,17 @@
+.icon-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #007bff; /* Color del ícono */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones */
+  }
+  
+  .icon-container:hover .icon {
+    color: #0056b3; /* Color del ícono al hacer hover */
+    transform: scale(1.2); /* Escala del ícono al hacer hover */
+  }
+  
