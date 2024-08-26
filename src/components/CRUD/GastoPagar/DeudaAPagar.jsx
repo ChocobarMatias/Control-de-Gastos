@@ -1,40 +1,40 @@
 import { useState,useEffect } from "react"
 import axios from "axios";
 import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
-import "../CSS/Tarjeta.css"
+import "../../../CSS/Tarjeta.css";
 import { SlArrowDown,SlArrowUp } from "react-icons/sl";
 import Form from 'react-bootstrap/Form';
 
-const GastosVehiculos = () => {
+const DeudaAPagar = () => {
   const [tarjetas, setTarjetas] = useState([]);
-const [showTarjeta,setShowTarjeta] = useState(false);
-
-const getTarjeta =async()=>{
-  try{
-  let response = await axios.get("http://localhost:3000/Tarjetas")
-  console.log(response.data)
-  setTarjetas(response.data) 
-} catch (error) {
-  console.error(error);
-}
-}
-
-const showClick = ()=>{
-  setShowTarjeta(!showTarjeta);
-  console.log("hola = "+showTarjeta)
-}
-
-useEffect(() => { getTarjeta();}, []);
-
-
-  return (
-    <div>
-      <hr />
+  const [showTarjeta,setShowTarjeta] = useState(false);
+  
+  const getTarjeta =async()=>{
+    try{
+    let response = await axios.get("http://localhost:3000/Tarjetas")
+    console.log(response.data)
+    setTarjetas(response.data) 
+  } catch (error) {
+    console.error(error);
+  }
+  }
+  
+  const showClick = ()=>{
+    setShowTarjeta(!showTarjeta);
+    console.log("hola = "+showTarjeta)
+  }
+  
+  useEffect(() => { getTarjeta();}, []);
+  
+  
+    return (
+      <div>
+        <hr />
       <div className="header-container">
-        <h2>Gastos de Vehiculos : </h2>
+        <h3>Deudas/Prestamos/Compras con Tarjeta pedidos a familia o amigos a Pagar  : </h3>
         {!showTarjeta && ( <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label> -- Monto Total a pagar de Vehiculos : </Form.Label>
+          <Form.Label> -- Monto Total a pagar de Deduas : </Form.Label>
           <Form.Control type="email" placeholder="name@example.com" className="inputTotal" />
         </Form.Group>
       </Form>)}
@@ -75,12 +75,12 @@ useEffect(() => { getTarjeta();}, []);
       {showTarjeta && (
       <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label>Monto Total a pagar de Vehiculos : </Form.Label>
+          <Form.Label>Monto Total a pagar de Deudas: </Form.Label>
           <Form.Control type="email" placeholder="name@example.com" />
         </Form.Group>
       </Form>)}
     </div>
-  )
+    )
 }
 
-export default GastosVehiculos
+export default DeudaAPagar

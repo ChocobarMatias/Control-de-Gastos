@@ -15,12 +15,13 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
+      <Route path="/" index element={<Home/>} />
+      <Route path={HOME} element={<Home/>}></Route>
       <Route path={LOGIN} element={<Login/>}></Route>
       <Route path={LISTA_COMPRAS} element={ <ListaCompras/>}></Route>
       <Route path={LISTA_TAREAS} element={ <ListaTarea/>}></Route>
       <Route path={GASTOS_DIARIOS} element={ <GastoDiario/>}></Route>
       <Route path={GASTOS_MENSUALES} element={ <GastoMensual/>}></Route>
-      <Route path={HOME} element={<Home/>}></Route>
       <Route path={VER_TARJETA} element={<VerTarjeta/>}></Route>
       {/* 
       <Route path="" element={}></Route>

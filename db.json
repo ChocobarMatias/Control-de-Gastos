@@ -1,37 +1,36 @@
 {
   "Tarjetas": [
     {
-      "NombreTarjeta": "",
-      "MontoPagar": 0,
+      "NombreTarjeta": "a",
+      "MontoPagar": 22,
       "Estado": "Pagado",
-      "FechaCierre": "",
-      "FechaVencimiento": "",
-      "FechaRegistro": "",
-      "TotalTajeta": "",
-      "id": 1
+      "FechaRegistro": "26/08/2024 - 02:47:49",
+      "id": 3
     },
     {
-      "NombreTarjeta": "",
-      "MontoPagar": 0,
+      "NombreTarjeta": "sdasdadd",
+      "MontoPagar": 13,
       "Estado": "Pendiente",
-      "FechaCierre": "",
-      "FechaVencimiento": "",
-      "FechaRegistro": "",
-      "TotalTajeta": "",
-      "id": 2
+      "FechaRegistro": "26/08/2024 - 03:50:24",
+      "id": 4
+    },
+    {
+      "MontoPagar": "6",
+      "FechaRegistro": "26/08/2024 - 04:18:43",
+      "id": 5
     }
   ],
-  "TarjetaVista": [
+  "ResumenTarjeta": [
     {
       "id": 1,
       "NombreTarjeta": "Visa Macro",
       "Compra": "",
-      "MontoCompra":"",
-      "CantidadCuota":"",
-      "CalorCuota":"",
-      "CuotaActual":"",
-      "CuotasPendientes":"",
-      "MontoPendiente":"",
+      "MontoCompra": "",
+      "CantidadCuota": "",
+      "CalorCuota": "",
+      "CuotaActual": "",
+      "CuotasPendientes": "",
+      "MontoPendiente": "",
       "FechaCompra": "",
       "TotalTajeta": "",
       "FechaRegistro": "01/08/2024"

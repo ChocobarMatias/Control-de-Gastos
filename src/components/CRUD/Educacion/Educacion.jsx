@@ -1,11 +1,11 @@
 import { useState,useEffect } from "react"
 import axios from "axios";
 import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
-import "../CSS/Tarjeta.css"
+import "../../../CSS/Tarjeta.css";
 import { SlArrowDown,SlArrowUp } from "react-icons/sl";
 import Form from 'react-bootstrap/Form';
 
-const DeudaACobrar = () => {
+const Educacion = () => {
   const [tarjetas, setTarjetas] = useState([]);
   const [showTarjeta,setShowTarjeta] = useState(false);
   
@@ -31,10 +31,10 @@ const DeudaACobrar = () => {
       <div>
         <hr />
       <div className="header-container">
-        <h3>Deudas/Prestamos/Compras con Tarjeta que preste y tengo para Cobrar  : </h3>
+        <h2>Gastos de Educacion : </h2>
         {!showTarjeta && ( <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label> -- Monto Total a Cobrar : </Form.Label>
+          <Form.Label> -- Monto Total a pagar de Educacion : </Form.Label>
           <Form.Control type="email" placeholder="name@example.com" className="inputTotal" />
         </Form.Group>
       </Form>)}
@@ -75,7 +75,7 @@ const DeudaACobrar = () => {
       {showTarjeta && (
       <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label>Monto Total a Cobrar : </Form.Label>
+          <Form.Label>Monto Total a pagar de Educacion : </Form.Label>
           <Form.Control type="email" placeholder="name@example.com" />
         </Form.Group>
       </Form>)}
@@ -83,4 +83,4 @@ const DeudaACobrar = () => {
     )
 }
 
-export default DeudaACobrar
+export default Educacion

@@ -1,11 +1,11 @@
 import { useState,useEffect } from "react"
 import axios from "axios";
 import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
-import "../CSS/Tarjeta.css"
+import "../../../CSS/Tarjeta.css";
 import { SlArrowDown,SlArrowUp } from "react-icons/sl";
 import Form from 'react-bootstrap/Form';
 
-const Conectividad = () => {
+const ImpuestosDomiciliario = () => {
   const [tarjetas, setTarjetas] = useState([]);
   const [showTarjeta,setShowTarjeta] = useState(false);
   
@@ -31,10 +31,10 @@ const Conectividad = () => {
       <div>
         <hr />
       <div className="header-container">
-        <h2>Gastos realizados en conectividad/Internet/Telefono/etc... : </h2>
+        <h2>Impuestos Domiciliarios : </h2>
         {!showTarjeta && ( <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label> -- Monto Total a pagar de Conectividad : </Form.Label>
+          <Form.Label> -- Monto Total a pagar de Impuestos Domiciliarios : </Form.Label>
           <Form.Control type="email" placeholder="name@example.com" className="inputTotal" />
         </Form.Group>
       </Form>)}
@@ -75,12 +75,11 @@ const Conectividad = () => {
       {showTarjeta && (
       <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label>Monto Total a pagar de Conectividad : </Form.Label>
+          <Form.Label>Monto Total a pagar de Impuestos Domiciliarios : </Form.Label>
           <Form.Control type="email" placeholder="name@example.com" />
         </Form.Group>
       </Form>)}
-    </div>
-    )
+    </div>    )
 }
 
-export default Conectividad
+export default ImpuestosDomiciliario

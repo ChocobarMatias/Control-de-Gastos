@@ -48,7 +48,7 @@ const ViewTarjeta = () => {
     const getTarjeta = async (id) => {
 
       try {
-        let response = await axios.get("http://localhost:3000/TarjetaVista/");
+        let response = await axios.get("http://localhost:3000/ResumenTarjeta/"+id);
         console.log(response.data);
         setTarjetas(response.data);
        
@@ -58,19 +58,19 @@ const ViewTarjeta = () => {
     };
   
   
-    const handleClick = async(id) =>{
-      console.log("eliminar")
+    // const handleClick = async(id) =>{
+    //   console.log("eliminar")
     
-      try {
-        let response = await axios.delete("http://localhost:3000/Tarjetas/"+id)
-        if (response) {
-          alert("Tarjeta eliminada correctamente")
-          getTarjeta()
-        }
-      } catch (error) {
-        console.log(error)
-      }
-    }
+    //   try {
+    //     let response = await axios.delete("http://localhost:3000/Tarjetas/"+id)
+    //     if (response) {
+    //       alert("Tarjeta eliminada correctamente")
+    //       getTarjeta()
+    //     }
+    //   } catch (error) {
+    //     console.log(error)
+    //   }
+    // }
   
     const showClick = () => {
       setShowTarjeta(!showTarjeta);
