@@ -28,11 +28,11 @@ const Main = () => {
       </Col>
       <Col md={2}>
       <Button onClick={() => setOpen(!open)} aria-controls="example-collapse-text" aria-expanded={open}>
-        Toggle Collapse
+        Informacion Adicional
       </Button>
       <Collapse in={open}>
         <div id="example-collapse-text">
-          Este es el contenido que se puede ocultar o mostrar.
+          Mostar informacion Adicional.
           <Aside/>
         </div>
       </Collapse>

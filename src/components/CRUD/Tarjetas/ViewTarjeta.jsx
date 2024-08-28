@@ -95,7 +95,7 @@ const ViewTarjeta = () => {
   return (
     <div>
       <div className="header-container">
-        <h2>Tarjetas de Credito : </h2>
+        <h2>Resumen de Tarjeta : </h2>
         
         {!showTarjeta && ( <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
