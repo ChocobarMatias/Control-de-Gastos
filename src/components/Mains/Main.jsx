@@ -12,12 +12,13 @@ import { Button, Col, Collapse, Row } from "react-bootstrap"
 
 const Main = () => {
 
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   return (
     <>
     <Row>
       <Col md={10}>
+      <br /><br /><br />
       <TarjetasCredito/>
       <ImpuestosDomiciliario/>
       <Conectividad/>
@@ -27,15 +28,15 @@ const Main = () => {
       <DeudaACobrar/>
       </Col>
       <Col md={2}>
-      <Button onClick={() => setOpen(!open)} aria-controls="example-collapse-text" aria-expanded={open}>
+      {/* <Button onClick={() => setOpen(!open)} aria-controls="example-collapse-text" aria-expanded={open}>
         Informacion Adicional
-      </Button>
-      <Collapse in={open}>
+      </Button> */}
+      {/* <Collapse in={open}> */}
         <div id="example-collapse-text">
           Mostar informacion Adicional.
           <Aside/>
         </div>
-      </Collapse>
+      {/* </Collapse> */}
       </Col>
     </Row>
     </>

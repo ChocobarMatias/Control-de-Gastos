@@ -1,0 +1,37 @@
+/* Header.css */
+.fixed-header {
+    position: fixed;  /* Fija el header en la parte superior */
+    top: 0;           /* Lo coloca en la parte superior */
+    left: 0;          /* Alineado a la izquierda */
+    width: 100%;      /* Ocupa todo el ancho de la pantalla */
+    background-color: #333;  /* Color de fondo */
+    color: white;           /* Color del texto */
+    padding: 10px 0;        /* Espaciado interno */
+    text-align: left;     
+    z-index: 1000;          /* Asegura que el header esté por encima de otros elementos */
+  }
+  
+  .fixed-header nav ul {
+    list-style-type: none;  /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fixed-header nav ul li {
+    display: inline;        /* Muestra los elementos de la lista en línea */
+    margin: 0 15px;         /* Espaciado entre los elementos de la lista */
+  }
+  
+  .fixed-header nav ul li a {
+    color: white;
+    text-decoration: none;  /* Elimina el subrayado de los enlaces */
+  }
+  
+  .fixed-header nav ul li a:hover {
+    text-decoration: underline;  /* Subraya los enlaces al pasar el ratón por encima */
+  }
+  
+  body {
+    margin-top: 60px; /* Añade un margen superior para evitar que el contenido se superponga con el header */
+  }
+  
