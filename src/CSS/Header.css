@@ -1,6 +1,6 @@
 /* Header.css */
 .fixed-header {
-    position: fixed;  Fija el header en la parte superior
+    /* position: fixed;  Fija el header en la parte superior */
     top: 0;           /* Lo coloca en la parte superior */
     left: 0;          /* Alineado a la izquierda */
     width: 100%;      /* Ocupa todo el ancho de la pantalla */
@@ -10,11 +10,20 @@
     text-align: left;     
     z-index: 1000;          /* Asegura que el header esté por encima de otros elementos */
   }
-  
+ .ok{
+  margin-top:30px;
+  margin-left:-10px}
 .agregar{
-  margin-bottom: 1px;
+  margin-bottom: 50px;
 }
-
+.delete{
+  /* margin-bottom: 55px; */
+  margin-left:-5px;
+  margin-top: 1px;
+}
+.icon-delete{
+  margin-top: 30px; /*es para bajar de forma vertical algo cuando mas grande el numero mas baja*/
+}
   .fixed-header nav ul {
     list-style-type: none;  /* Elimina los puntos de la lista */
     margin: 0;
