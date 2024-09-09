@@ -11,7 +11,7 @@ import EditIcon from "../../EditIcon";
 import IconoView from "../../IconoView";
 import { Link } from "react-router-dom";
 // import UpdateTarjeta from "./CRUD/Tarjetas/UpdateTarjeta";
-import { BsXCircle } from "react-icons/bs";
+import deleteimg from "../../../assets/delete.png";
 import { FcOk } from "react-icons/fc";
 const ImpuestosDomiciliario = () => {
 
@@ -121,7 +121,7 @@ const ImpuestosDomiciliario = () => {
               </Button>
               <br />
               <br />
-              <MDBTable bordered borderColor="primary">
+              <MDBTable bordered borderColor="primary" style={{ color: 'red', fontSize: '24px' }}sa>
                 <MDBTableHead className="text-white">
                   <tr>
                     <th scope="col" className="bg-warning">Id</th>
@@ -142,7 +142,7 @@ const ImpuestosDomiciliario = () => {
                       <td>{tarjeta.MontoPagar}</td>
                       <td><b>{tarjeta.Estado}{tarjeta.Estado === "Pagado" ? (
                           <FcOk style={{marginLeft:"15%",width: "30%", height: "30%"}} className="iconOk" />
-                        ) : (<BsXCircle className="bg-danger" style={{ marginLeft:"1%",width: "30%", height: "30%"}}/>)}</b>
+                        ) : (<img src={deleteimg} alt="descripción de la imagen" style={{ width: '35px', height: 'auto',marginLeft:"5%" }}/>)}</b>
                       </td>
                       <td>{tarjeta.FechaCierre}</td>
                       <td>{tarjeta.FechaVencimiento}</td>
