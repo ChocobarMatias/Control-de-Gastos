@@ -11,8 +11,9 @@ import EditIcon from "../../EditIcon";
 import IconoView from "../../IconoView";
 import { Link } from "react-router-dom";
 import UpdateTarjeta from "../Tarjetas/UpdateTarjeta";
-import { BsXCircle } from "react-icons/bs";
+import { FaRegTimesCircle } from 'react-icons/fa';
 import { FcOk } from "react-icons/fc";
+import deleteimg from "../../../assets/delete.png";
 
 const TarjetasCredito = () => {
   const [tarjetas, setTarjetas] = useState([]);
@@ -95,14 +96,14 @@ const TarjetasCredito = () => {
         <h2>Tarjetas de Credito : </h2>
 
         <Form>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>-- Monto Total a pagar de Tarjetas: $</Form.Label>
-            <Form.Control type="number" placeholder="$ Monto Total Tarjetas" className="inputTotal" value={total} disabled/>
+          <Form.Group className="input-main mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>-- Monto Total a pagar de Tarjetas: $    </Form.Label>
+            <Form.Control type="number" placeholder="$ Monto Total Tarjetas"style={{width: '230px', height: 'auto',}} className="inputTotal" value={total} disabled/>
           </Form.Group>
         </Form>
         {/* este div activa la funcion de collapse */}
-        <div className="toggle-container" onClick={handleCollapseToggle}>
-          <b>{open ? "Ocultar..." : "Mostrar Mas..."}</b>
+        <div className="toggle-container text-primary" onClick={handleCollapseToggle}>
+          <b className="mostar">{open ? " Mostrar Menos..." : "Mostrar Mas..."}</b>
           {open ? (
             <SlArrowUp className="iconFlecha" />
           ) : (
@@ -120,7 +121,7 @@ const TarjetasCredito = () => {
               </Button>
               <br />
               <br />
-              <MDBTable bordered borderColor="primary">
+              <MDBTable bordered borderColor="primary" style={{ color: 'red', fontSize: '24px' }}>
                 <MDBTableHead className="text-white">
                   <tr>
                     <th scope="col" className="bg-warning">Id</th>
@@ -140,8 +141,8 @@ const TarjetasCredito = () => {
                       <td>{tarjeta.NombreTarjeta}</td>
                       <td>{tarjeta.MontoPagar}</td>
                       <td><b>{tarjeta.Estado}{tarjeta.Estado === "Pagado" ? (
-                          <FcOk style={{marginLeft:"15%",width: "30%", height: "30%"}} className="iconOk" />
-                        ) : (<BsXCircle className="bg-danger" style={{ marginLeft:"1%",width: "30%", height: "30%"}}/>)}</b>
+                          <FcOk style={{marginLeft:"18%",width: "20%", height: "20%"}} className="iconOk" />
+                        ) : (<img src={deleteimg} alt="descripción de la imagen" style={{ width: '35px', height: 'auto',marginLeft:"5%" }}/>)}</b>
                       </td>
                       <td>{tarjeta.FechaCierre}</td>
                       <td>{tarjeta.FechaVencimiento}</td>

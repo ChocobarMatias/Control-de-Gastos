@@ -98,14 +98,14 @@ const Conectividad = () => {
         <h2>Conectividad : </h2>
 
         <Form>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>-- Monto Total a pagar de Tarjetas: $</Form.Label>
-            <Form.Control type="number" placeholder="$ Monto Total Tarjetas" className="inputTotal" value={total} disabled/>
+          <Form.Group className="input-main-conec mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>-- Monto Total a pagar de Conectividad: $</Form.Label>
+            <Form.Control type="number" placeholder="$ Monto Total Tarjetas"style={{width: '230px', height: 'auto',}} className="inputTotal" value={total} disabled/>
           </Form.Group>
         </Form>
         {/* este div activa la funcion de collapse */}
-        <div className="toggle-container" onClick={handleCollapseToggle}>
-          <b>{open ? "Ocultar..." : "Mostrar Mas..."}</b>
+        <div className="toggle-container text-primary" onClick={handleCollapseToggle}>
+          <b className="mostar3">{open ? "Mostrar Menos..." : "Mostrar Mas..."}</b>
           {open ? (
             <SlArrowUp className="iconFlecha" />
           ) : (

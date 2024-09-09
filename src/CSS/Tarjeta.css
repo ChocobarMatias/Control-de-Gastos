@@ -3,7 +3,27 @@
   align-items: center;
   /* justify-content: space-between; */
 }
-
+.mostar{
+  margin-left: 15px;
+}
+.mostar2{
+  margin-left: -5px;
+}
+.mostar3{
+  margin-left: -20px;
+}
+.mostar4{
+  margin-left: -2px;
+}
+.mostar5{
+  margin-left: -47px;
+}
+.mostar6{
+  margin-left: -35px;
+}
+.mostar7{
+  margin-left: -40px;
+}
 .toggle-container {
   display: flex;
   align-items: center;
@@ -33,7 +53,34 @@
 .modal{
   height: 200px;
 }
-
+.input-main-impuesto{
+  margin-top:-15px;
+  margin-left:175px;
+}
+.input-main-conec{
+  margin-top:-15px;
+  margin-left:135px;
+}
+.input-main-edu{
+  margin-top:-15px;
+  margin-left:28px;
+}
+.input-main-vehiculo{
+  margin-top:-15px;
+  margin-left:36px;
+}
+.input-main-cobrar{
+  margin-top:-15px;
+  margin-left:85px;
+}
+.input-main-Pagar{
+  margin-top:-15px;
+  margin-left:100px;
+}
+.input-main{
+  margin-top:-15px;
+  margin-left:55px;
+}
 .iconOk{
   width: 10%;
   height: 10%;

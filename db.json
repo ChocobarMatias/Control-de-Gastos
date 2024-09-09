@@ -8,15 +8,12 @@
       "id": 3
     },
     {
-      "NombreTarjeta": "sdasdadd",
-      "MontoPagar": 13,
-      "Estado": "Pendiente",
-      "FechaRegistro": "26/08/2024 - 03:50:24",
+      "FechaRegistro": "09/09/2024 - 04:22:49",
       "id": 4
     },
     {
-      "MontoPagar": "6",
-      "FechaRegistro": "26/08/2024 - 04:18:43",
+      "Estado": "Pendiente",
+      "FechaRegistro": "09/09/2024 - 04:31:45",
       "id": 5
     }
   ],

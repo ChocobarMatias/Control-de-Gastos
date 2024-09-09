@@ -2,6 +2,7 @@ import { Button, Form } from "react-bootstrap";
 import { useState } from "react";
 import { FaRegTimesCircle } from 'react-icons/fa';
 import { FcPlus } from "react-icons/fc";
+import deleteimg from "../../assets/delete.png";
 import "../../CSS/Header.css";
 
 const Header = () => {
@@ -66,7 +67,7 @@ const Header = () => {
                 </div>
 
                 {/* Icono de eliminar */}
-                <FaRegTimesCircle className="icon-delete" style={{ color: 'red', fontSize: '24px', cursor: 'pointer' }} onClick={() => handleRemoveClick(index)} />
+                <img src={deleteimg} className="icon-delete" style={{ width: '40px', height: 'auto', cursor: 'pointer' }} onClick={() => handleRemoveClick(index)} />
               </div>
             ))}
           </div>

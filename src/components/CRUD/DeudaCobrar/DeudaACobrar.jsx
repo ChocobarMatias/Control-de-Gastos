@@ -94,17 +94,17 @@ const DeudaACobrar = () => {
         <div>
          <hr />
       <div className="header-container">
-      <h3>Deudas/Prestamos/Compras con Tarjeta que preste y tengo para Cobrar  : </h3>
+      <h2>Deudas a Cobrar  : </h2>
 
         <Form>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>-- Monto Total a pagar de Tarjetas: $</Form.Label>
-            <Form.Control type="number" placeholder="$ Monto Total Tarjetas" className="inputTotal" value={total} disabled/>
+          <Form.Group className="input-main-cobrar mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>-- Monto Total a pagar de Deuda a Cobrar: $</Form.Label>
+            <Form.Control  type="number" placeholder="$ Monto Total Tarjetas"style={{width: '230px', height: 'auto',}} className="inputTotal" value={total} disabled/>
           </Form.Group>
         </Form>
         {/* este div activa la funcion de collapse */}
-        <div className="toggle-container" onClick={handleCollapseToggle}>
-          <b>{open ? "Ocultar..." : "Mostrar Mas..."}</b>
+        <div className="toggle-container text-primary" onClick={handleCollapseToggle}>
+          <b className="mostar7">{open ? "Mostrar Menos..." : "Mostrar Mas..."}</b>
           {open ? (
             <SlArrowUp className="iconFlecha" />
           ) : (
