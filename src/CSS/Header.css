@@ -1,6 +1,6 @@
 /* Header.css */
 .fixed-header {
-    position: fixed;  /* Fija el header en la parte superior */
+    position: fixed;  Fija el header en la parte superior
     top: 0;           /* Lo coloca en la parte superior */
     left: 0;          /* Alineado a la izquierda */
     width: 100%;      /* Ocupa todo el ancho de la pantalla */
@@ -11,6 +11,10 @@
     z-index: 1000;          /* Asegura que el header esté por encima de otros elementos */
   }
   
+.agregar{
+  margin-bottom: 1px;
+}
+
   .fixed-header nav ul {
     list-style-type: none;  /* Elimina los puntos de la lista */
     margin: 0;

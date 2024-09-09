@@ -1,5 +1,7 @@
 import { Button, Form } from "react-bootstrap";
 import { useState } from "react";
+import { FaRegTimesCircle } from 'react-icons/fa';
+import { FcPlus } from "react-icons/fc";
 import "../../CSS/Header.css";
 
 const Header = () => {
@@ -33,48 +35,46 @@ const Header = () => {
 
   return (
     <header className="fixed-header">
-      <nav>
-        <h1>Control y Seguimiento de Gastos</h1>
-        <Form>
-          <Form.Group controlId="formDate">
-            <div className="input-container" style={{display: "flex",justifyContent: "flex-start",alignItems: "center",gap: "10px"}}>
-              <div style={{display: "flex",flexDirection: "column",alignItems: "flex-start"}}>
-                <Form.Label>Selecciona una fecha</Form.Label>
-                <Form.Control style={{width: "100%"}} type="date" value={selectedDate} onChange={handleDateChange}/>
+  <nav>
+    <h1>Control y Seguimiento de Gastos</h1>
+    <Form>
+      <Form.Group controlId="formDate">
+        <div className="input-container" style={{display: "flex", flexDirection: "column", gap: "10px",}} >
+          <div style={{display: "flex", flexDirection: "column", alignItems: "flex-start",}}>
+            <Form.Label>Selecciona una fecha</Form.Label>
+            <Form.Control style={{ width: "100%" }} type="date" value={selectedDate} onChange={handleDateChange}/>
+          </div>
+
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", }}>
+              <div>
+              <Form.Label>Ingreso/Sueldo</Form.Label>
+              <FcPlus className="agregar" style={{ marginLeft: "10px",  fontSize: '34px', cursor: 'pointer'}} onClick={handleClick} />
               </div>
-              {/* <p >Fecha seleccionada: {selectedDate}</p> */}
-              {inputs.map((input, index) => (
-               
-                <div key={input.id} style={{display: "flex",flexDirection: "column",alignItems: "flex-start" }}>
-                   <br /><br />
-                  <Form.Label>Ingreso/Sueldo - {input.id}</Form.Label>
-                  <Form.Control
-                    style={{width: "70%"}}
-                    type="number"
-                    value={input.value}
-                    onChange={(e) => handleInputChange(index, e)}/>
-                <div>
-                <Button
-                    variant="danger"
-                    onClick={() => handleRemoveClick(index)}
-                    style={{ marginTop: "5px" }}>
-                    Eliminar
-                  </Button>
-                  </div>
-                </div>
-              ))}
+              <Form.Control style={{ width: "200px" }} type="number" />
             </div>
-          </Form.Group>
-          <p>*Presionar Agregar para colocar los Ingresos/Sueldos*</p>
-          <Button onClick={handleClick}>Agregar</Button>
-          <br />
-          <p>*Presionar OK para Guardar los Ingresos/Sueldos*</p>
-          <Button>Ok</Button>
-          {/* <p>Fecha seleccionada: {selectedDate}</p> */}
-        </Form>
-      </nav>
-      
-    </header>
+              {/* <FcPlus className="agregar" style={{ marginLeft: "10px",  fontSize: '34px', cursor: 'pointer'}} onClick={handleClick} /> */}
+          </div>
+
+          {/* Inputs generados en una línea horizontal */}
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+            {inputs.map((input, index) => (
+              <div key={input.id} style={{display: "flex",alignItems: "center", gap: "5px" }} >
+                <Form.Control type="number" value={input.value} onChange={(e) => handleInputChange(index, e)} style={{ width: "150px" }} />
+                <FaRegTimesCircle style={{ color: 'red', fontSize: '24px', cursor: 'pointer'  }} onClick={() => handleRemoveClick(index)}/>              
+              </div>
+            ))}
+          </div>
+        </div>
+      </Form.Group>
+
+      <p>*Presionar OK para Guardar los Ingresos/Sueldos*</p>
+      <Button>Ok</Button>
+    </Form>
+  </nav>
+</header>
+
+
   );
 };
 
