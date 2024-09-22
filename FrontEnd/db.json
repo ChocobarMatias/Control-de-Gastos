@@ -1,0 +1,100 @@
+{
+  "Tarjetas": [
+    {
+      "NombreTarjeta": "a",
+      "MontoPagar": 22,
+      "Estado": "Pagado",
+      "FechaRegistro": "26/08/2024 - 02:47:49",
+      "id": 3
+    },
+    {
+      "FechaRegistro": "09/09/2024 - 04:22:49",
+      "id": 4
+    },
+    {
+      "Estado": "Pendiente",
+      "FechaRegistro": "09/09/2024 - 04:31:45",
+      "id": 5
+    }
+  ],
+  "ResumenTarjeta": [
+    {
+      "id": 1,
+      "NombreTarjeta": "Visa Macro",
+      "Compra": "",
+      "MontoCompra": "",
+      "CantidadCuota": "",
+      "CalorCuota": "",
+      "CuotaActual": "",
+      "CuotasPendientes": "",
+      "MontoPendiente": "",
+      "FechaCompra": "",
+      "TotalTajeta": "",
+      "FechaRegistro": "01/08/2024"
+    }
+  ],
+  "Impuestos": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
+    }
+  ],
+  "Vehiculos": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
+    }
+  ],
+  "DeudaPagar": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
+    }
+  ],
+  "DeudaCobrar": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
+    }
+  ],
+  "Educacion": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
+    }
+  ],
+  "Conectividad": [
+    {
+      "id_tarjeta": 1,
+      "NombreTarjeta": "Visa Macro",
+      "MontoPagar": "$10000",
+      "Estado": "Pagado",
+      "FechaRegistro": "01/08/2024"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
